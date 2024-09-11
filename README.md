@@ -1,8 +1,3 @@
----
-### :tada: Announcement
-#### A new repository based on Nest.js is also available here [Modern Backend Development - WhereIsMyMotivation](https://github.com/unusualcodeorg/wimm-node-app) :confetti_ball:
----
-
 # Node.js Backend Typescript Project
 
 
@@ -36,6 +31,8 @@ Following are the features of this project:
 <br>
 
 Postman Collection Link -: https://www.postman.com/material-administrator-30762984/my-collections/collection/iaodvxt/library-assignment
+
+Backend URL -: https://library-assignment-en05.onrender.com
 
 Refer to /testingData to see how mongodb collections stored and create more documents.
 password for each user is 12345678
