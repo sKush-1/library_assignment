@@ -5,7 +5,6 @@ import express from 'express'
 
 const router = express.Router();
 
-// router.post('/create',createBook);
 router.get('/get',isAuthenticated, getBook);
 router.post('/issue',isAuthenticated,issueBook);
 router.post('/return',isAuthenticated, returnBook);

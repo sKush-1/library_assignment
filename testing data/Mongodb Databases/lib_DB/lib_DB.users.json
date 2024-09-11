@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "66e188207fe25b5931d01caa"
+  },
+  "username": "Sumit",
+  "email": "Sumit@gmail.com",
+  "password": "$2a$10$L3mtkexBlTK61kbGNdn60eS3NhJEKNv5H0DgfB0CUnlwekhOte45a",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e18897045446dd3550e3a1"
+  },
+  "username": "Rohit",
+  "email": "Rohit@gmail.com",
+  "password": "$2a$10$lbL.JngMnJ4tjcluxSC9OO1unZ/TUf6tcOL/0NDE9M9DRVeO1rdHK",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e188aa045446dd3550e3a4"
+  },
+  "username": "Ankit",
+  "email": "Ankit@gmail.com",
+  "password": "$2a$10$/nUwMDxsOtK1mZMaS2//NujFgxuKEvzYvzcbUH/o6dSmYHWmv7.Ui",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e188b9045446dd3550e3a7"
+  },
+  "username": "Aman",
+  "email": "Aman@gmail.com",
+  "password": "$2a$10$kygudCMjX.2kZee1g7.kDengnIGoimzlOCgZTe7rBI4LSiMuUkOMu",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e188c6045446dd3550e3aa"
+  },
+  "username": "Rohan",
+  "email": "Rohan@gmail.com",
+  "password": "$2a$10$DAps0tWqe0Swq3UftwYTn.Q1rQc6SMF1BQtuRsTbe6Nlp3UzDYa12",
+  "__v": 0
+}]

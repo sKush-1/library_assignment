@@ -1,0 +1,180 @@
+[{
+  "_id": {
+    "$oid": "66dfcbcecb24522f1107732f"
+  },
+  "bookName": "To Kill a Mockingbird",
+  "authorName": "Harper Lee",
+  "category": "Fiction",
+  "rentPricePerDay": 50
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f11077330"
+  },
+  "bookName": "1984",
+  "authorName": "George Orwell",
+  "category": "Dystopian",
+  "rentPricePerDay": 45
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f11077331"
+  },
+  "bookName": "Pride and Prejudice",
+  "authorName": "Jane Austen",
+  "category": "Romance",
+  "rentPricePerDay": 55
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f11077332"
+  },
+  "bookName": "The Great Gatsby",
+  "authorName": "F. Scott Fitzgerald",
+  "category": "Classic",
+  "rentPricePerDay": 60
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f11077333"
+  },
+  "bookName": "The Catcher in the Rye",
+  "authorName": "J.D. Salinger",
+  "category": "Fiction",
+  "rentPricePerDay": 50
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f11077334"
+  },
+  "bookName": "The Hobbit",
+  "authorName": "J.R.R. Tolkien",
+  "category": "Fantasy",
+  "rentPricePerDay": 65
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f11077335"
+  },
+  "bookName": "Harry Potter and the Philosopher's Stone",
+  "authorName": "J.K. Rowling",
+  "category": "Fantasy",
+  "rentPricePerDay": 70
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f11077336"
+  },
+  "bookName": "Moby Dick",
+  "authorName": "Herman Melville",
+  "category": "Adventure",
+  "rentPricePerDay": 50
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f11077337"
+  },
+  "bookName": "War and Peace",
+  "authorName": "Leo Tolstoy",
+  "category": "Historical Fiction",
+  "rentPricePerDay": 75
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f11077338"
+  },
+  "bookName": "The Alchemist",
+  "authorName": "Paulo Coelho",
+  "category": "Philosophy",
+  "rentPricePerDay": 60
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f11077339"
+  },
+  "bookName": "The Da Vinci Code",
+  "authorName": "Dan Brown",
+  "category": "Thriller",
+  "rentPricePerDay": 55
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f1107733a"
+  },
+  "bookName": "The Lord of the Rings",
+  "authorName": "J.R.R. Tolkien",
+  "category": "Fantasy",
+  "rentPricePerDay": 80
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f1107733b"
+  },
+  "bookName": "The Shining",
+  "authorName": "Stephen King",
+  "category": "Horror",
+  "rentPricePerDay": 65
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f1107733c"
+  },
+  "bookName": "The Kite Runner",
+  "authorName": "Khaled Hosseini",
+  "category": "Drama",
+  "rentPricePerDay": 55
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f1107733d"
+  },
+  "bookName": "Sapiens: A Brief History of Humankind",
+  "authorName": "Yuval Noah Harari",
+  "category": "Non-fiction",
+  "rentPricePerDay": 70
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f1107733e"
+  },
+  "bookName": "The Girl on the Train",
+  "authorName": "Paula Hawkins",
+  "category": "Mystery",
+  "rentPricePerDay": 60
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f1107733f"
+  },
+  "bookName": "The Fault in Our Stars",
+  "authorName": "John Green",
+  "category": "Young Adult",
+  "rentPricePerDay": 50
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f11077340"
+  },
+  "bookName": "Inferno",
+  "authorName": "Dan Brown",
+  "category": "Thriller",
+  "rentPricePerDay": 55
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f11077341"
+  },
+  "bookName": "A Brief History of Time",
+  "authorName": "Stephen Hawking",
+  "category": "Science",
+  "rentPricePerDay": 70
+},
+{
+  "_id": {
+    "$oid": "66dfcbcecb24522f11077342"
+  },
+  "bookName": "The Book Thief",
+  "authorName": "Markus Zusak",
+  "category": "Historical Fiction",
+  "rentPricePerDay": 60
+}]

@@ -1,0 +1,190 @@
+[{
+  "_id": {
+    "$oid": "66e189a9045446dd3550e3ba"
+  },
+  "userId": {
+    "$oid": "66e18897045446dd3550e3a1"
+  },
+  "bookName": "1984",
+  "username": "Rohit",
+  "issuedDate": "2024-09-11T12:14:33.344Z",
+  "status": "issued",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e189c5045446dd3550e3bf"
+  },
+  "userId": {
+    "$oid": "66e18897045446dd3550e3a1"
+  },
+  "bookName": "To Kill a Mockingbird",
+  "username": "Rohit",
+  "issuedDate": "2024-09-11T12:15:01.214Z",
+  "status": "issued",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e189dc045446dd3550e3c4"
+  },
+  "userId": {
+    "$oid": "66e18897045446dd3550e3a1"
+  },
+  "bookName": "The Alchemist",
+  "username": "Rohit",
+  "issuedDate": "2024-09-11T12:15:24.315Z",
+  "status": "issued",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e189ec045446dd3550e3c9"
+  },
+  "userId": {
+    "$oid": "66e18897045446dd3550e3a1"
+  },
+  "bookName": "The Lord of the Rings",
+  "username": "Rohit",
+  "issuedDate": "2024-09-11T12:15:40.348Z",
+  "status": "issued",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e189fa045446dd3550e3ce"
+  },
+  "userId": {
+    "$oid": "66e18897045446dd3550e3a1"
+  },
+  "bookName": "The Kite Runner",
+  "username": "Rohit",
+  "issuedDate": "2024-09-11T12:15:54.855Z",
+  "status": "returned",
+  "__v": 0,
+  "returnedDate": "2024-09-11T12:16:10.748Z",
+  "totalRentPaid": 55
+},
+{
+  "_id": {
+    "$oid": "66e18a54045446dd3550e3dd"
+  },
+  "userId": {
+    "$oid": "66e188207fe25b5931d01caa"
+  },
+  "bookName": "The Kite Runner",
+  "username": "Sumit",
+  "issuedDate": "2024-09-11T12:17:24.476Z",
+  "status": "returned",
+  "__v": 0,
+  "returnedDate": "2024-09-11T12:18:32.372Z",
+  "totalRentPaid": 55
+},
+{
+  "_id": {
+    "$oid": "66e18a5d045446dd3550e3e2"
+  },
+  "userId": {
+    "$oid": "66e188207fe25b5931d01caa"
+  },
+  "bookName": "The Lord of the Rings",
+  "username": "Sumit",
+  "issuedDate": "2024-09-11T12:17:33.338Z",
+  "status": "issued",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e18a65045446dd3550e3e7"
+  },
+  "userId": {
+    "$oid": "66e188207fe25b5931d01caa"
+  },
+  "bookName": "The Alchemist",
+  "username": "Sumit",
+  "issuedDate": "2024-09-11T12:17:41.206Z",
+  "status": "issued",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e18a7c045446dd3550e3ec"
+  },
+  "userId": {
+    "$oid": "66e188207fe25b5931d01caa"
+  },
+  "bookName": "Pride and Prejudice",
+  "username": "Sumit",
+  "issuedDate": "2024-09-11T12:18:04.263Z",
+  "status": "returned",
+  "__v": 0,
+  "returnedDate": "2024-09-11T12:18:47.188Z",
+  "totalRentPaid": 55
+},
+{
+  "_id": {
+    "$oid": "66e18a8c045446dd3550e3f1"
+  },
+  "userId": {
+    "$oid": "66e188207fe25b5931d01caa"
+  },
+  "bookName": "The Girl on the Train",
+  "username": "Sumit",
+  "issuedDate": "2024-09-11T12:18:20.239Z",
+  "status": "issued",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e18e81ed875d1bcef2bf4d"
+  },
+  "userId": {
+    "$oid": "66e188aa045446dd3550e3a4"
+  },
+  "bookName": "The Girl on the Train",
+  "username": "Ankit",
+  "issuedDate": "2024-09-11T12:35:13.175Z",
+  "status": "issued",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e18e86ed875d1bcef2bf52"
+  },
+  "userId": {
+    "$oid": "66e188aa045446dd3550e3a4"
+  },
+  "bookName": "Pride and Prejudice",
+  "username": "Ankit",
+  "issuedDate": "2024-09-11T12:35:18.249Z",
+  "status": "issued",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e18e8ced875d1bcef2bf57"
+  },
+  "userId": {
+    "$oid": "66e188aa045446dd3550e3a4"
+  },
+  "bookName": "The Alchemist",
+  "username": "Ankit",
+  "issuedDate": "2024-09-11T12:35:24.875Z",
+  "status": "issued",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e18e93ed875d1bcef2bf5c"
+  },
+  "userId": {
+    "$oid": "66e188aa045446dd3550e3a4"
+  },
+  "bookName": "To Kill a Mockingbird",
+  "username": "Ankit",
+  "issuedDate": "2024-09-11T12:35:31.136Z",
+  "status": "returned",
+  "__v": 0,
+  "returnedDate": "2024-09-11T12:36:09.232Z",
+  "totalRentPaid": 50
+}]
