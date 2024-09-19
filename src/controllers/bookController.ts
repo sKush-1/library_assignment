@@ -47,7 +47,6 @@ export const getBook = async (req: Request, res: Response) => {
   }
 };
 
-
 export const issueBook = async (req: Request, res: Response) => {
   try {
     const { user, bookName } = req.body;
@@ -59,12 +58,12 @@ export const issueBook = async (req: Request, res: Response) => {
 
     transactionSchema.parse(req.body);
 
-    const book = await Book.findOne({bookName});
+    const book = await Book.findOne({ bookName });
 
-    if(!book){
+    if (!book) {
       return res.status(401).json({
-        message: "No such book exists"
-      })
+        message: "No such book exists",
+      });
     }
 
     const alreadyIssued = await BookTransaction.findOne({
@@ -128,7 +127,7 @@ export const returnBook = async (req: Request, res: Response) => {
       });
     }
 
-    const book = await Book.findOne({bookName});
+    const book = await Book.findOne({ bookName });
 
     const date1 = new Date();
     const date2 = new Date(bookDetails.issuedDate);
@@ -159,17 +158,18 @@ export const bookUsersDetail = async (req: Request, res: Response) => {
   try {
     const { bookName } = req.body;
     const { userId, startDate, endDate } = req.query;
-    
+
     let query: { bookName?: string; userId?: string; issuedDate?: any } = {};
 
     if (bookName) query.bookName = bookName;
     if (userId) query.userId = userId as string;
 
-    // Add issuedDate range to the query if startDate or endDate is provided
     if (startDate || endDate) {
       query.issuedDate = {};
-      if (startDate) query.issuedDate.$gte = new Date(startDate as string).toISOString();
-      if (endDate) query.issuedDate.$lte = new Date(endDate as string).toISOString();
+      if (startDate)
+        query.issuedDate.$gte = new Date(startDate as string).toISOString();
+      if (endDate)
+        query.issuedDate.$lte = new Date(endDate as string).toISOString();
     }
 
     const bookTransactions = await BookTransaction.find(query);
@@ -194,21 +194,141 @@ export const bookUsersDetail = async (req: Request, res: Response) => {
   }
 };
 
-
 export const totalBookRent = async (req: Request, res: Response) => {
   const { bookName } = req.body;
+
+  const bookSchema = z.object({
+    bookName: z.string(),
+  });
+
+  bookSchema.parse(req.body);
 
   const bookTransactions = await BookTransaction.find({ bookName });
 
   let totalRentGenerated = 0;
 
   const transactionDetails = bookTransactions.map((bookTransaction) => {
-    if(bookTransaction.totalRentPaid) {
-    totalRentGenerated += bookTransaction?.totalRentPaid;
+    if (bookTransaction.totalRentPaid) {
+      totalRentGenerated += bookTransaction?.totalRentPaid;
     }
   });
 
   return res.status(201).json({
     totalRentGenerated,
   });
+};
+
+export const booksInDateRange1 = async (req: Request, res: Response) => {
+  // books issued and returned within date range mongodb aggregation pipeline
+
+  try {
+    const { startDate, endDate } = req.query;
+
+    const start = new Date(startDate as string).toISOString();
+
+    const end = new Date(endDate as string).toISOString();
+    const bookTransaction = await BookTransaction.aggregate([
+      {
+        $match: {
+          $and: [
+            {
+              issuedDate: {
+                $gte: start,
+                $lte: end,
+              },
+            },
+            {
+              returnedDate: {
+                $gte: start,
+                $lte: end,
+              },
+            },
+          ],
+        },
+      },
+    ]);
+
+    return res.status(200).json({
+      bookTransaction,
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({
+      message: "Error fetching books in date range",
+      error,
+    });
+  }
+};
+
+export const booksInDateRange2 = async (req: Request, res: Response) => {
+  const { startDate, endDate } = req.query;
+
+  const start = new Date(startDate as string);
+
+  const end = new Date(endDate as string);
+
+  try {
+    const allBookTransactions = await BookTransaction.find();
+
+    const filteredTransactions = allBookTransactions.filter((transaction) => {
+      const issuedDate = new Date(transaction.issuedDate);
+      const returnedDate = new Date(transaction.returnedDate);
+
+      return (
+        issuedDate >= start &&
+        issuedDate <= end &&
+        returnedDate >= start &&
+        returnedDate <= end
+      );
+    });
+
+    return res.status(200).json({
+      bookTransaction: filteredTransactions,
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({
+      message: "Error getting books in date range",
+      error,
+    });
+  }
+};
+
+export const booksInDateRange3 = async (req: Request, res: Response) => {
+  // books issued and returned in a date range using gte and lte operator
+  try {
+    const { userId, startDate, endDate } = req.query;
+
+    let query: {
+      userId?: string;
+      issuedDate?: any;
+      returnedDate?: any;
+    } = {};
+
+    if (startDate || endDate) {
+      query.issuedDate = {};
+      query.returnedDate = {};
+
+      if (startDate) {
+        query.issuedDate.$gte = new Date(startDate as string).toISOString();
+        query.returnedDate.$gte = new Date(startDate as string).toISOString();
+      }
+
+      if (endDate) {
+        query.issuedDate.$lte = new Date(endDate as string).toISOString();
+        query.returnedDate.$lte = new Date(endDate as string).toISOString();
+      }
+    }
+
+    const bookTransaction = await BookTransaction.find(query);
+    return res.status(201).json({
+      bookTransaction,
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(201).json({
+      message: "Error fetching books",
+      error,
+    });
+  }
 };

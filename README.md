@@ -18,7 +18,6 @@ Spinning up a service takes up to a minute, which causes a noticeable delay for 
 
 
 # Project Instructions
-We will learn and build the backend application for a blogging platform. The main focus will be to create a maintainable and highly testable architecture.
 <br>
 Following are the features of this project:
 * **This backend is written in Typescript**: The type safety at build time and having intellisense for it in the IDE like vscode is unparalleled to productivity. I have found production bug reduced to a significant amount since most of the code vulnerabilities are identified during the build phase itself.
